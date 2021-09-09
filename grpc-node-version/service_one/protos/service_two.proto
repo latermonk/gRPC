@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service serviceTwo {
+    rpc getData(DataObject) returns (ResponseObject) {}
+}
+
+message DataObject {
+    string name = 1;
+    string email = 2;
+}
+
+message ResponseObject {
+    int32 status = 1;
+    string message = 2;
+}

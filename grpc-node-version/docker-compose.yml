@@ -1,0 +1,27 @@
+version : '2.1'
+ 
+services:
+  two:
+    image: servicetwo
+    restart: always
+    ports:
+      - 4500:4500
+    networks:
+      vpcbr:
+        ipv4_address: 172.19.0.14
+  one:
+    image: serviceone
+    restart: always
+    ports:
+      - 4600:4600
+    networks:
+      vpcbr:
+        ipv4_address: 172.19.0.15    
+
+networks:
+    vpcbr:
+        driver: bridge
+        ipam:
+          config:
+            - subnet: 172.19.0.0/24
+              gateway: 172.19.0.2
