@@ -50,6 +50,19 @@ grpcurl  -plaintext -max-time 5 -d '{"name": "abcde123 hahaha"}' 127.0.0.1:57613
 https://github.com/grpc-ecosystem/awesome-grpc
 
 
+##  其它调试工具
+
+https://github.com/fullstorydev/grpcui  [ webui ]
+https://github.com/ktr0731/evans
+https://github.com/uw-labs/bloomrpc
+
+
+###  grpc wbeui
+```
+grpcui -plaintext 127.0.0.1:49390
+```
+
+![grpc-webui](_image/grpc-webui.png)
 
 
 
