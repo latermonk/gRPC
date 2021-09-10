@@ -26,6 +26,10 @@ go build in client/server diretory
 
 ---
 
+https://github.com/steadylearner/go-mod-with-gRPC-example
+
+
+---
 ###  How to use go mod with gRPC 
 
 I followed [the official "hello world" example](https://github.com/grpc/grpc-go/blob/master/examples/helloworld/greeter_server/main.go) code. But, I couldn't make it work with go mod easily.
